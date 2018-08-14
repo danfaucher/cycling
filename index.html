@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+
+		<title>Carousel</title>
+		
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+		
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+		<script src="https://use.fontawesome.com/dd511ff0f4.js"></script>
+		
+		<link href="https://dcc.ilc.org/global_visual_language/css/ilc_main.css" media="screen" rel="stylesheet" type="text/css">
+		<link href="https://dcc.ilc.org/global_visual_language/css/gvl.css" media="screen" rel="stylesheet" type="text/css">
+
+		<link href="css/carousel.css" rel="stylesheet" />
+		
+		
+	</head>
+	
+	<body>
+
+		<div id="myCarousel2" class="ilcCarousel carousel slide" data-ride="carousel" data-interval="false">
+		  <!-- Indicators -->
+		  <ol class="carousel-indicators">
+			<li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel2" data-slide-to="1"></li>
+			<li data-target="#myCarousel2" data-slide-to="2"></li>
+			<li data-target="#myCarousel2" data-slide-to="3"></li>
+		  </ol>
+		
+		  <!-- Wrapper for slides -->
+		  <div class="carousel-inner" role="listbox">
+			<div class="item active">
+			  <img src="img/k1.jpg" class="img-responsive center-block" alt="Some kittens" title="Some kittens">
+              <div class="caption-background"></div>
+			  <div class="carousel-caption">
+				<p>Here are some kittens.</p>
+			  </div>
+			</div>
+		
+			<div class="item">
+			  <img src="img/k2.jpg" class="img-responsive center-block" alt="More kittens" title="Some kittens">
+              <div class="caption-background"></div>
+			  <div class="carousel-caption">
+				<p>Here are some more kittens.</p>
+			  </div>
+			</div>
+		
+			<div class="item">
+			  <img src="img/k3.jpg" class="img-responsive center-block" alt="Still more kittens" title="Some kittens">
+              <div class="caption-background"></div>
+			  <div class="carousel-caption">
+
+				<p>Yes, still more kittens.</p>
+			  </div>
+			</div>
+		
+			<div class="item">
+			  <img src="img/k4.jpg" class="img-responsive center-block" alt="Other kittens" title="Some kittens">
+              <div class="caption-background"></div>
+			  <div class="carousel-caption">
+				<p>Other kittens, without a title.</p>
+			  </div>
+			</div>
+		  </div>
+		
+		  <!-- Left and right controls -->
+<!--		  <a class="control-black no-gradient left carousel-control" href="#myCarousel2" role="button" data-slide="prev" onclick="this.blur();"> -->
+		  <a class="cCcontrol cControlLeft" href="#myCarousel2" role="button" data-slide="prev" onmouseout="this.blur();">
+			<i class="fa fa-arrow-left fa-2x icon " aria-hidden="true"></i>
+			<span class="sr-only">Previous</span>
+		  </a>
+		  <a class="cCcontrol cControlRight" href="#myCarousel2" role="button" data-slide="next" onmouseout="this.blur();">
+			<i class="fa fa-arrow-right fa-2x icon " aria-hidden="true"></i>
+			<span class="sr-only">Next</span>
+		  </a>
+		</div>
+		
+	
+		
+	</body>
+
+</html>
