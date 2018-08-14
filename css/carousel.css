@@ -1,0 +1,96 @@
+/* This carousel is responsive horizontally but not vertically. */
+
+
+body {
+}
+
+.ilcCarousel {
+	max-width: 885px; /* set this to the maximum width of your embedded carousel */
+	border: 1px solid #C6CDD0;
+}
+
+.ilcCarousel img {
+  width: auto;
+  max-height: 498px; /* set this to the maximum height of your image */
+  min-height: 498px; /* set this to the maximum height of your image */
+  position: relative;
+  z-index: 3
+}
+
+.carousel-caption {
+    top: auto;
+    bottom: -5px;
+	color: #F8F9F9;
+    right: 5%;
+    left: 5%;
+}
+
+.carousel-indicators {
+    top: auto;
+    bottom: -5px;
+}
+
+.carousel-indicators li {
+	background-color: #212628;
+	border: 1px solid #F8F9F9;
+}
+
+.carousel-indicators .active {
+    background-color: #F8F9F9;
+	border-color: #212628;
+}
+
+.caption-background {
+	position: absolute;
+	bottom: 0px;
+    background-color: #212628; /* background color of caption area */
+	opacity: 0.75; /* change this to zero to remove the semi-transparent caption bar */
+	z-index: 5;
+	width: 100%;
+	height: 80px; /* use this property to set the height of the shaded caption background */
+}
+
+.caption-text {
+	position: relative;
+	z-index: 4;
+    font-size:14px;
+    color: #F8F9F9;   
+}
+
+.carousel-inner {
+	background-color: #F8F9F9; /* background color of carousel */
+}
+
+.cCcontrol {
+	position: absolute;
+    top: 40%;
+    bottom: 40%;
+    width: 50px;
+    text-align: center;
+	vertical-align: middle;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+    background-color: transparent;
+	color: #5f6d73; /* colour of arrow without focus/active */
+
+	}
+
+.cCcontrol:hover, .cCcontrol:active, .cCcontrol:focus {
+	color: #212628; /* colour of arrow on focus/active */
+	background-color: rgba(198, 205, 208, 0.5); /* colour of arrow background on focus.active */
+}
+
+.cControlLeft {
+    left: 0;
+	
+}
+						
+.cControlRight {
+    right: 0;
+	
+}
+
+.icon {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
